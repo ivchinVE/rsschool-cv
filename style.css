@@ -1,11 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
 * {
-  
-          box-sizing: border-box;
+  font-family: 'Poppins', Tahoma,  Verdana, sans-serif;
+  box-sizing: border-box;
+}
+h1{
+
+  font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 body {
-  background-color: rgb(129, 36, 36);
+  background-color: rgb(61, 0, 0);
+  
+}
+
+p{
+  line-height: 25px;
+}
+.section-item a{
+  text-decoration: none;
+    color: #06ec24;
+    transition: color 0.5s
 }
 
 .container {
@@ -17,7 +33,7 @@ body {
 
 .container .aside {
   width: 30%;
-  background-color: #f1e90a;
+  background-color: #0858a7;
   font-family: Montserrat;
   color: #fff;
 }
@@ -25,28 +41,117 @@ body {
 .container .aside img {
   display: block;
   width: 100%;
-  margin-bottom: 110px;
+  margin-bottom: 30px;
 }
 
+.container .aside .contact {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+.container .aside .skills {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+.container .aside .skill_item {
+  margin-left: 40px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+.container .aside .My_education {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+.container .aside .education_list {
+ list-style: none;
+ line-height: 30px;
+}
+.container.aside.lowercase_element{
+  
+    display: block;
+    text-decoration: none;
+    color: #1500fc;    
+    margin-bottom: 20px;
+
+}
+.containernav {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 50px;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  position: relative;
+  padding: 0 12px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 50px;
+  color: rgb(17, 1, 1); 
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  bottom: -5px;
+  width: calc(100% - 24px);
+  height: 2px;
+  background-color: rgb(219, 14, 14);
+  opacity: 0;
+  transition: .5s;
+}
+.nav-link:hover::after {
+  opacity: 1;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
 .main {
-  width: 70%;
+  width: 65%;
   font-family: Montserrat;
   color: #2d2d2d;
-  padding-top: 70px;
+  padding-top: 10px;
   background-color: #fff;
 }
 
 .main .header {
   width: 100%;
   height: 400px;
-  background-color: #ffffff;
-  padding: 75px 50px;
+    background-image: url(./assets/img/heder_site.jpg);
+ display: block;
   text-transform: uppercase;
   margin-bottom: 50px;
 }
+.main .content {
+    padding: 30px;
+}
+
+.main .header .fio {
+  font-size: 47px;
+  font-weight: 600;
+  padding: 50px;
+  
+}
+
 
 .main .footer {
-  height: 300px;
-  background-color: #3b89dd; 
+  height: 200px;
+  background-color: #16d426 ;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;     
+    align-items: center;
+   justify-content: space-around;
+  
+}
+
+.main .footer div img {
  
+  height: 100px;
 }
