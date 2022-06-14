@@ -5,23 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Tai+Heritage+Pro&display=swap" rel="stylesheet">
     <title>Valentin Ivchin CV</title>
 </head>
 <body>
-    <div class="container">
-        <!-----------------------------ASIDE--------------------------------------------------->
+    <div class="container">     
         <aside class="aside">
             <div><img src="assets/img/photo.jpg" alt="my_photo"></div> 
-            <section class="contact">
-            <h1>Contacts</h1>
+            <section class="contact" id="contact">
+            <h2>Contacts</h2>
             <ul>
-                <li class="lowercase_element"> Telegram             </li>
-                <li class="lowercase_element"> VK               </li>
-                <li class="lowercase_element">   Github             </li>
+                <li class="section-item"> Telegram:  
+                    <a href="+79654256565" title="github">valentin</a>            </li>
+                <li class="section-item"> VK:
+                    <a href="https://vk.com/valentin495" title="github">valentin495</a>           </li>
+                <li class="section-item">Github: 
+                    <a href="https://github.com/IvchinVE" title="github">IvchinVE</a>           </li>
             </ul>
             </section>
-            <section class="skills">
-            <h1>Skills</h1>
+            <section class="skills" id="skills">
+            <h2>Skills</h2>
             <ul>
                 <li class="skill_item"> CSS                     </li>
                 <li class="skill_item"> HTML                   </li>
@@ -30,34 +35,81 @@
                 <li class="skill_item">   GitHub                </li>
             </ul>
             </section>
-        <section class="My_education">
-        <h1>Education</h1>
+        <section class="My_education" id="education">
+        <h2>Education</h2>
         <ul class="education_list" >
-            <li class="education_item"> CSS                     </li>
-            <li class="education_item"> HTML                   </li>
-            <li class="education_item">   Java Script           </li>
-            <li class="education_item">   C#                    </li>
-            <li class="education_item">   GitHub                </li>
+            <li class="education_item"> Ryazan state Radio- Engineering University               </li>
+            <li class="education_item"> RSSK                  </li>
+            <li class="education_item">  D-link           </li>
         </ul>
         </section>
             
         </aside>
-        <main class="main">
-                   <!-----------------------------HEADER--------------------------------------------------->
-            <header class="header">  
-                <div class="fio">
+       
+        <main class="main">                  
+            <header class="header"> 
+                <div class="containernav"  >
+                    <nav class="nav">
+                        <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link">Skill</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#education" class="nav-link">Education</a>
+                        </li>                      
+
+                      </ul>
+                    </nav>
+                </div>         
+                     <div class="fio" >                                
                <p>Valentin Ivchin</p>
-                </div>              
+                </div>                     
             </header>
-            <div >
+            <div class="content">
                 <section class="about">
-                    <h2>About Me</h2>           
+                    <h2>About Me</h2>  
+                    <p>I am 27 years old, I work as a design engineer. My real job will eventually lead me to stagnation.
+                        I want to develop during my life. I want my future profession to bring more benefits to others in 
+                        life, as well as help develop in life by learning new things and improving my knowledge</p>
+                    <h2>Education</h2>
+                    <p>Ryazan state Radio Engineering University</p> 
+                    <p>radio faculti</p>    
+                    <p>years: 2015-2019</p>  
+                    <p>specialization: design engineer</p> 
+                    <h2>Courses</h2>
+                    <ul>
+                        <li>
+                            <p>RS School JS/FE Pre-School 2022</p> 
+                        </li>
+                        <li>
+                            <p>english language (A2->)</p> 
+                        </li>
+                    </ul>                    
                    </section>
                    <section class="example">
-                    <h2>About Me</h2>           
+                    <h2>code example</h2>   
+                    <pre>
+                        <code>
+                            for (int write = 0; write arr.Length; write++)
+                            {
+                                for (int sort = 0; sort arr.Length - 1; sort++)
+                                {
+                                    if (arr[sort] > arr[sort + 1])
+                                    {
+                                        temp = arr[sort + 1];
+                                        arr[sort + 1] = arr[sort];
+                                        arr[sort] = temp;
+                                    }       
+                                }   
+                                Console.Write("{0} ", arr[write]);  
+                            }
+                        </code>
+                    </pre>        
                    </section>
-            </div>
-            <!-----------------------------FOOTER--------------------------------------------------->
+            </div>            
             <footer class="footer">  
                 <div>
                     <a href="https://rs.school/" target="_blank">
@@ -68,7 +120,10 @@
                     <a href="https://ivchinve.github.io/rsschool-cv/" target="_blank">
                         <img src="assets/img/github_logo.png" alt="logo_github">
                     </a>
-                </div>           
+                </div>  
+                <div>
+                    <p> Create in 2022</p>
+                </div>         
             </footer>
         </main>
     </div>
